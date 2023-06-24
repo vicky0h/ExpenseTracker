@@ -4,7 +4,7 @@ const mongoURL = `mongodb://kengtania:kengtania@ac-fhsnu55-shard-00-00.ebgbywk.m
 const db = async () => {
     try {
         mongoose.set('strictQuery', false);
-        await mongoose.connect(process.env.MONGO_URL);
+        await mongoose.connect(mongoURL);
         // await mongoose.connect(process.env.MONGO_URL);
         console.log('DB Connection Sucessful');
     } catch (error) {
