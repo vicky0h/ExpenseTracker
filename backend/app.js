@@ -15,8 +15,6 @@ app.use(cors());
 
 // routes
 readdirSync('./routes').map((route) => app.use('/api/v1', require('./routes/' + route)));
-// readdirSync('./routes').map((route) => app.use('https://expense-tracker-eight-iota.vercel.app/', require('./routes/' + route)));
-// readdirSync('./routes').map((route) => app.use('https://expense-tracker-eight-iota.vercel.app/api/v1', require('./routes/' + route)));
 
 const server = () => {
     db();
