@@ -3,9 +3,17 @@
     "version": "0.1.0",
     "description": "expense-tracker project",
     "scripts": {
-      "start": "node backend/app.js",
+      "start": "node backend/app.js && cd ../frontend && npm start",
       "build": "cd backend && npm install && cd ../frontend && npm install && npm build",
       "test": "echo \"Error: no test specified\" && exit 1"
-    }
+    },
+    "dependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^16.0.3",
+        "express": "^4.18.2",
+        "jsonwebtoken": "^9.0.0",
+        "md5": "^2.3.0",
+        "mongoose": "^7.1.0"
+      }
   }
   
