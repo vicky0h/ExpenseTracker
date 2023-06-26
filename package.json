@@ -3,7 +3,7 @@
     "version": "0.1.0",
     "description": "expense-tracker project",
     "scripts": {
-      "start": "node backend/app.js && cd ../frontend && npm start",
+      "start": "node backend/app.js",
       "build": "cd backend && npm install && cd ../frontend && npm install && npm build",
       "test": "echo \"Error: no test specified\" && exit 1"
     }
